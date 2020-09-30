@@ -2,4 +2,4 @@
 
 
 cd /home/alerta/mail/alerta.servhost.com.br/alerta/new/
-yes | rm -rf *
+find . -type f -exec rm -fv {} ;
