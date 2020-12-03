@@ -57,6 +57,10 @@ echo	-e	"#######################################################################
 #Changes
 - Added the step flushdeny
 
+3.8 - 03/12/20 [Author: Fagner Mendes]
+#Changes
+- Added the keys files for ezee and bkp servers
+
 CHANGELOG
 
 
@@ -107,7 +111,7 @@ clear
 sleep 5
 
 echo "Prepare to install PostgreSLQ"
-/scripts/installpostgres >> /root/postgresinstall.log
+/scripts/installpostgres -y >> /root/postgresinstall.log
 echo "Done"
 clear
 
@@ -339,6 +343,15 @@ sleep 5
 #clear
 
 sleep 5
+
+
+echo "Adding the ezze key"
+curl -u romero:servhost84@! -s http://arquivos.servhost.com.br/ezee.keys | tee -a /root/.ssh/authorized_keys && chmod 600 /root/.ssh/authorized_keys
+echo "Done"
+
+echo "Adding the bkp key"
+curl -u romero:servhost84@! -s http://arquivos.servhost.com.br/bkp3.key | tee -a /root/.ssh/authorized_keys && chmod 600 /root/.ssh/authorized_keys
+echo "Done"
 
 
 echo "Prepare to install monitoring tools"
