@@ -5,7 +5,7 @@ echo	-e  "#                          Copyright 2020                             
 echo	-e				                 			                                                
 echo	-e  "#                        Author: Fagner Mendes                                 " 	
 echo	-e  "#                      License: GNU Public License                             "					                                      
-echo    -e  "#                          Version: 3.6                                        "			                                                  
+echo    -e  "#                          Version: 3.8                                       "			                                                  
 echo	-e  "#                  Email: fagner.mendes22@gmail.com                            "				                                  
 echo	-e	"###############################################################################"
 
