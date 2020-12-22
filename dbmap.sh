@@ -28,6 +28,5 @@ echo ""
 cut -d: -f2 /etc/userdomains > domain.txt
 sed -i 's/ //g' domain.txt
 CPUSER=$( cat /root/domain.txt )
-  echo "Now processing $CPUSER ..."
-for i in $CPUSER; do /scripts/rebuild_dbmap $CPUSER
+  for i in $CPUSER; do /usr/local/cpanel/scripts/rebuild_dbmap $i
 done
