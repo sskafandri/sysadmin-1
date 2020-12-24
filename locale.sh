@@ -23,4 +23,8 @@ echo ""
 
 localedef -i pt_BR -f UTF-8 pt_BR.UTF-8
 localectl set-locale LANG=pt_BR.utf8
+echo "export LC_CTYPY=pt_BR.utf8" >> .bash_profile
+echo "export LC_ALL=pt_BR.utf8" >> .bash_profile
+export LC_CTYPY=pt_BR.utf8
+export LC_ALL=pt_BR.utf8
 locale -a
