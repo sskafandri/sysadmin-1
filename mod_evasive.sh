@@ -3,7 +3,7 @@
 echo ""
 
 echo "Checking if the module is installed in this server"
-if result=$(httpd -M | grep evasive24_module); then
+if result=$(httpd -M | grep evasive24_module 2>/dev/null); then
     stdout=$result
 else
     rc=$?
