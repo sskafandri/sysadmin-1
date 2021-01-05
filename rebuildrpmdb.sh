@@ -18,4 +18,4 @@ rpm --quiet -qa
 rpm --rebuilddb
 yum clean all
 echo "The process was done"
-done
+
